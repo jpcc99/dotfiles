@@ -5,7 +5,7 @@ alias spacman="sudo pacman"
 alias rm-orphan='sudo pacman -Rs $(pacman -Qdt | grep "^[^ ]+")'
 alias icat="kitty +kitten icat"
 alias calendar="zenity --calendar"
-alias dotfiles='/usr/bin/git --git-dir=/home/jp/.dotfiles --work-tree=/home/jp'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=/home/$USER'
 
 # Color
 alias ls="ls -hN --color=auto --group-directories-first"
