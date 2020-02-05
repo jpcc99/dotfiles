@@ -6,6 +6,8 @@ alias rm-orphan='sudo pacman -Rs $(pacman -Qdt | grep "^[^ ]+")'
 alias icat="kitty +kitten icat"
 alias calendar="zenity --calendar"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=/home/$USER'
+alias aur='/bin/zsh $HOME/.scripts/aur_download.zsh'
+alias op='xdg-open'
 
 # Color
 alias ls="ls -hN --color=auto --group-directories-first"
