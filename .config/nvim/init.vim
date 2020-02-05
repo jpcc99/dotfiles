@@ -3,8 +3,7 @@
 " Appearence
 set encoding=utf-8
 set t_Co=256
-"set number
-set relativenumber
+set number
 set cursorline
 set textwidth=80
 set wildmenu
@@ -14,7 +13,6 @@ syntax on
 
 " Buffer
 set modifiable
-
 " Searching
 nnoremap <F3> :set hlsearch!<CR>
 set ignorecase
@@ -23,6 +21,8 @@ set gdefault
 
 " Tabulation
 set tabstop=4 shiftwidth=4 "expandtab
+set list
+set listchars=tab:\|-
 
 " vimPlug
 source ~/.config/nvim/config/vimPlugs.vim
