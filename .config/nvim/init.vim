@@ -8,7 +8,6 @@ set cursorline
 set textwidth=80
 set wildmenu
 set showmatch
-set list
 syntax on
 
 " Buffer
