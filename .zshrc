@@ -41,7 +41,7 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # Aliases
-source ~/.config/.aliasrc
+source ~/.config/aliasrc
 
 # Antibody (Plugins)
 source <(antibody init)
