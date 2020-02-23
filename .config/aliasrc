@@ -7,6 +7,7 @@ alias icat="kitty +kitten icat"
 alias calendar="zenity --calendar"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=/home/$USER'
 alias aur='/bin/zsh $HOME/.scripts/aur_download.zsh'
+alias fzf='fzf --height 40% --reverse'
 alias op='xdg-open'
 
 # Color
@@ -14,4 +15,4 @@ alias ls="ls -hN --color=auto --group-directories-first"
 alias grep="grep --color=auto"
 
 # Prefered apps
-alias -s {c,cc,cpp,rs,js,ts,css,html,txt}=nvim	
+alias -s {c,cpp,rs,java,py,js,css,html,xml,txt,tex}=nvim
