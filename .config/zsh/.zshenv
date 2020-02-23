@@ -1,6 +1,7 @@
 # Proifile file. Runs on login.
 export ZDOTDIR="$HOME/.config/zsh/"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:$HOME/go/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix=~/.node_modules
