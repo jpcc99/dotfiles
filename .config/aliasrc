@@ -2,7 +2,7 @@
 alias sysctl="sudo systemctl"
 alias usrctl="systemctl --user"
 alias spacman="sudo pacman"
-alias rm-orphan='sudo pacman -Rs $(pacman -Qdt | grep "^[^ ]+")'
+alias rm-orphan='sudo pacman -Rs $(pacman -Qdtq)'
 alias icat="kitty +kitten icat"
 alias calendar="zenity --calendar"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=/home/$USER'
