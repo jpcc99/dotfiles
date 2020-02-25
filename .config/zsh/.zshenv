@@ -4,7 +4,6 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.node_modules/bin:$PATH"
-export npm_config_prefix=~/.node_modules
 export EDITOR="nvim"
 export SUDO_EDITOR=nvim
 export TERMINAL="kitty"
