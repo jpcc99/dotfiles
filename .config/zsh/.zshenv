@@ -7,7 +7,7 @@ export PATH="$HOME/.node_modules/bin:$PATH"
 export EDITOR="nvim"
 export SUDO_EDITOR=nvim
 export TERMINAL="kitty"
-export BROWSER="chromium"
+export BROWSER="firefox"
 export READER="zathura"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
 export LS_COLORS
