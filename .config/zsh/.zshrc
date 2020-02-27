@@ -44,7 +44,9 @@ export KEYTIMEOUT=1
 source ~/.config/aliasrc
 
 # asdf
-source $HOME/.asdf/asdf.sh
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
 
 # Antibody (Plugins)
 source <(antibody init)
