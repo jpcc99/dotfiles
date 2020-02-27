@@ -65,10 +65,10 @@ map         <silent><A-l>       :tabnext<Cr>
 map         <silent><A-h>       :tabprevious<Cr>
 nmap        <silent><C-b>       :TagbarToggle<CR>
 nmap	    <silent><C-t>		:call Open_terminal()<CR>
-nmap        <silent><A-v>		:vsplit<CR>
-nmap	    <silent><A-s>		:split<CR>
-:imap			jk			<ESC>
-nnoremap	    zz		    :update<CR>
+nmap        <silent>vv			:vsplit<CR>
+nmap	    <silent>ss			:split<CR>
+imap			jk				<ESC>
+nnoremap	    zz			    :update<CR>
 
 " COC 
 set statusline^=%{coc#status()}
