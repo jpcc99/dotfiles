@@ -16,10 +16,6 @@ function chpwd() {
 	print -Pn '\e]2;%n@%m %~\a'
 }
 
-# Tmux
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOCONNECT=true
-
 # History
 HISTFILE=~/.cache/zsh/zhistfile
 HISTSIZE=100000
@@ -46,6 +42,9 @@ export KEYTIMEOUT=1
 
 # Aliases
 source ~/.config/aliasrc
+
+# asdf
+source $HOME/.asdf/asdf.sh
 
 # Antibody (Plugins)
 source <(antibody init)
