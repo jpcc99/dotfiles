@@ -3,8 +3,7 @@
 " Appearence
 scriptencoding utf-8
 set encoding=utf-8
-set t_Co=256
-set t_ut=
+syntax on
 set number
 set cursorline
 set textwidth=80
@@ -15,7 +14,7 @@ set title titlestring=
 set cmdheight=2
 set list listchars=tab:│·,trail:·
 set nojoinspaces
-syntax on
+set termguicolors
 
 " Settings
 set splitbelow splitright
@@ -35,12 +34,11 @@ set smartcase
 set gdefault
 
 " Tabulation
-set tabstop=4     " tab spacing
+set tabstop=4		" tab spacing
 set shiftwidth=4
-" set expandtab     " tabs are now spaces
 set autoindent
-set wrap		  " Wrap lines
-set nowrap		  " Don't wrap text
+set wrap			" Wrap lines
+set nowrap			" Don't wrap text
 
 " Performance
 set timeout
@@ -56,25 +54,23 @@ autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 source ~/.config/nvim/config/vimPlugs.vim
 
 " Mapping
-map		    <silent><C-n> 	    :NERDTreeToggle<CR>
-map		    <silent><C-x> 	    :CocCommand<CR>
-map         <silent><C-p>       :FZF<Cr>
-map         <silent><A-t>       :tabnew<Cr>
-map         <silent><A-w>       :tabclose<Cr>
-map         <silent><A-l>       :tabnext<Cr>
-map         <silent><A-h>       :tabprevious<Cr>
-nmap        <silent><C-b>       :TagbarToggle<CR>
-nmap	    <silent><C-t>		:call Open_terminal()<CR>
-nmap        <silent>vv			:vsplit<CR>
-nmap	    <silent>ss			:split<CR>
-imap			jk				<ESC>
-nnoremap	    zz			    :update<CR>
+map			<silent><C-n>		:NERDTreeToggle<CR>
+map			<silent><C-x>		:CocCommand<CR>
+map			<silent><C-p>		:FZF<Cr>
+map			<silent>ttn			:tabnew<Cr>
+map			<silent>ttw			:tabclose<Cr>
+nmap		<silent>ttb			:TagbarToggle<CR>
+nmap		<silent>tt			:call Open_terminal()<CR>
+nmap		<silent>vv			:vsplit<CR>
+nmap		<silent>ss			:split<CR>
+imap		<silent>jk			<ESC>
+nnoremap	<silent>zz			:update<CR>
 
 " COC 
 set statusline^=%{coc#status()}
 
 " FZF
-let g:fzf_layout      = { 'down': '~40%'}
+let g:fzf_layout = { 'down': '~40%'}
 
 " Airline
 let g:airline#extensions#tabline#enable = 1
@@ -83,10 +79,13 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
 let g:airline#extensions#coc#enabled = 1
 
-set secure				" disables unsafe commands in project specific
+set secure	" disables unsafe commands in project specific
 
-"color dracula
-color atom-dark-256
+" Colourscheme
+let g:gruvbox_bold = 1
+let g:gruvbox_italic = 1
+let g:gruvbox_gruvbox_contrast_dark = "hard"
+colorscheme gruvbox
 
 function Open_terminal()
 	split
