@@ -52,34 +52,15 @@ autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
 source ~/.config/nvim/config/vimPlugs.vim
 
 " Mapping
-map			<silent>-			ddp
-map			<silent>_			:call feedkeys( line(".")==1 ? '' : 'ddkP')<CR>
-map			<silent><C-n>		:NERDTreeToggle<CR>
-map			<silent><C-x>		:CocCommand<CR>
-map			<silent><C-p>		:FZF<CR>
-map			<silent>tn			:tabnew<CR>
-map			<silent>tw			:tabclose<CR>
-map			<silent>tl			:tabnext<CR>
-map			<silent>th			:tabprevious<CR>
-nmap		<silent>tb			:TagbarToggle<CR>
-nmap		<silent>tt			:call Open_terminal()<CR>
-nmap		<silent>vv			:vsplit<CR>
-nmap		<silent>ss			:split<CR>
-imap		<silent>jk			<ESC>
-nnoremap	<silent>zz			:update<CR>
-nnoremap	<silent>zq			:exit<CR>
+source ~/.config/nvim/config/maps.vim
 
 " COC 
 set statusline^=%{coc#status()}
 
 " COC-actions
-" Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
   execute 'CocCommand actions.open ' . a:type
 endfunction
-xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
 " COC-vimlsp
 let g:markdown_fenced_languages = [
       \ 'vim',
