@@ -6,7 +6,7 @@
 
 # Prompt
 eval "$(starship init zsh)"
-RPROMPT='%t'
+RPROMPT='%T'
 
 # Term title
 function precmd() {
