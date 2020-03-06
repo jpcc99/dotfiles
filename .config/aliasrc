@@ -9,7 +9,11 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=/home/$USER'
 alias aur='/bin/zsh $HOME/.scripts/aur_download.zsh'
 alias fzf='fzf --height 40% --reverse'
 alias op='xdg-open'
-alias startnvm='source /usr/share/nvm/init-nvm.sh'
+
+# Aliases for easy navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 # Color
 alias ls="ls -hN --color=auto --group-directories-first"
