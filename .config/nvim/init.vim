@@ -73,6 +73,9 @@ let g:fzf_layout = { 'down': '~40%'}
 " GitGutter
 let g:gitgutter_grep = 'ag'
 
+" 
+let g:markdown_composer_open_browser = 0
+
 " Airline
 let g:airline#extensions#tabline#enable = 1
 let g:airline#extensions#tabline#left_set = ''
@@ -87,8 +90,6 @@ let g:gruvbox_bold = 1
 let g:gruvbox_italic = 1
 let g:gruvbox_gruvbox_contrast_dark = "hard"
 colorscheme gruvbox
-
-autocmd WinEnter,FileType tex,text,markdown set background=light		" Setting light mode
 
 function Open_terminal()
 	split
