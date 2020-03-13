@@ -16,6 +16,13 @@ function chpwd() {
 	print -Pn '\e]2;%n@%m %~\a'
 }
 
+# tmux
+if [[ $DISPLAY ]]; then
+    # If not running interactively, do not do anything
+    [[ $- != *i* ]] && return
+    [[ -z "$TMUX" ]] && exec tmux
+fi
+
 # History
 HISTFILE=~/.cache/zsh/zhistfile
 HISTSIZE=100000
