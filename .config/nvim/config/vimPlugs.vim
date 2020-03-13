@@ -25,6 +25,8 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug	'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug	'Xuyuanp/nerdtree-git-plugin'
 	Plug	'airblade/vim-gitgutter'
+	Plug	'tpope/vim-fugitive'
+	Plug 'jreybert/vimagit'
 	Plug	'junegunn/fzf.vim'
 	Plug	'majutsushi/tagbar'
 call plug#end()
