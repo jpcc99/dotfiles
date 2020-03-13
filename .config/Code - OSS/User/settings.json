@@ -7,7 +7,7 @@
     "explorer.compactFolders": true,
 
     // Rules
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "editor.rulers": [80],
     "editor.formatOnSave": false,
     "editor.tabSize": 2,
