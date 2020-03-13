@@ -1,0 +1,20 @@
+{
+    // Font
+    "editor.fontSize": 14,
+    "editor.lineHeight": 24,
+    "editor.fontFamily": "Iosevka Medium",
+    "editor.fontLigatures":true,
+    "explorer.compactFolders": true,
+
+    // Rules
+    "window.zoomLevel": 0,
+    "editor.rulers": [80],
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": true,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.menuBarVisibility": "toggle",
+    "java.home": "/usr/lib/jvm/java-11-openjdk",
+}
