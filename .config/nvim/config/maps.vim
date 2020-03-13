@@ -28,7 +28,7 @@ map			<silent>th			:tabprevious<CR>
 
 " Tagbar
 nmap		<silent>tb			:TagbarToggle<CR>
-nmap		<silent>tt			:call Open_terminal()<CR>
+nmap		<silent>tt			:terminal<CR>
 
 " Splits
 nmap		<silent>vv			:vsplit<CR>
