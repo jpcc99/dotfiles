@@ -17,6 +17,7 @@ set nojoinspaces
 set termguicolors
 
 " Settings
+set autoread
 set splitbelow splitright
 set showmatch
 set showcmd
@@ -90,9 +91,3 @@ let g:gruvbox_bold = 1
 let g:gruvbox_italic = 1
 let g:gruvbox_gruvbox_contrast_dark = "hard"
 colorscheme gruvbox
-
-function Open_terminal()
-	split
-	resize 10
-	terminal
-endfunction
