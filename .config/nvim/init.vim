@@ -73,7 +73,15 @@ let g:fzf_layout = { 'down': '~40%'}
 " GitGutter
 let g:gitgutter_grep = 'ag'
 
-" 
+" Emmet
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+let g:user_emmet_leader_key=','
+
+" IdentLine
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+" Composer 
 let g:markdown_composer_open_browser = 0
 
 " Airline
