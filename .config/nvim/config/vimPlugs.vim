@@ -11,17 +11,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug	'udalov/kotlin-vim'
 	
 	" Tools
-	function! BuildComposer(info)
-	  if a:info.status != 'unchanged' || a:info.force
-		if has('nvim')
-		  !cargo build --release --locked
-		else
-		  !cargo build --release --locked --no-default-features --features json-rpc
-		endif
-	  endif
-	endfunction
-	
-	Plug	'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 	Plug	'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug	'Xuyuanp/nerdtree-git-plugin'
 	Plug	'airblade/vim-gitgutter'
@@ -29,4 +19,6 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'jreybert/vimagit'
 	Plug	'junegunn/fzf.vim'
 	Plug	'majutsushi/tagbar'
+  Plug  'Yggdroot/indentLine'
+  Plug 'mattn/emmet-vim'
 call plug#end()
