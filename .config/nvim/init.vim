@@ -33,8 +33,9 @@ set smartcase
 set gdefault
 
 " Tabulation
-set tabstop=4		" tab spacing
-set shiftwidth=4
+set tabstop=2		" tab spacing
+set shiftwidth=2
+set expandtab
 set autoindent
 
 " Performance
