@@ -9,6 +9,11 @@ map			<silent><C-n>		:NERDTreeToggle<CR>
 
 " COC
 map			<silent><C-x>		  :CocCommand<CR>
+  " Moves using TAB when popup menu is visible 
+inoremap	<silent><expr>	<Tab>
+	\ pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap	<silent><expr>	<S-Tab>
+	\ pumvisible() ? "\<C-p>" : "\<S-TAB>"
   " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
   execute 'CocCommand actions.open ' . a:type
