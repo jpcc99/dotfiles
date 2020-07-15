@@ -3,26 +3,24 @@
 " Appearence
 scriptencoding utf-8
 set encoding=utf-8
+set guifont=Iosevka_Medium
 syntax on
 set number
 set relativenumber
 set cursorline
-set textwidth=80
 set colorcolumn=+1
 set visualbell
 set title titlestring=
 set cmdheight=2
-set list listchars=tab:│·,trail:·
 set nojoinspaces
 set termguicolors
 
 " Settings
-set autoread
 set splitbelow splitright
 set showmatch
-set showcmd
 set wildmenu
 set wrap			" Wrap lines
+set textwidth=80
 
 " Buffer
 set modifiable
