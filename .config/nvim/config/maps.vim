@@ -8,12 +8,11 @@ map			<silent>_			:call feedkeys( line(".")==1 ? '' : 'ddkP')<CR>
 map			<silent><C-n>		:NERDTreeToggle<CR>
 
 " COC
-map			<silent><C-x>		:CocCommand<CR>
-inoremap	<silent><expr>	<Tab>
-	\ pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap	<silent><expr>	<S-Tab>
-	\ pumvisible() ? "\<C-p>" : "\<S-TAB>"
-" Remap for do codeAction of selected region
+map			<silent><C-x>		  :CocCommand<CR>
+  " Remap for do codeAction of selected region
+function! s:cocActionsOpenFromSelected(type) abort
+  execute 'CocCommand actions.open ' . a:type
+endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 
