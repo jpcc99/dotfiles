@@ -1,11 +1,15 @@
+[username]
+show_always = true
+
 [character]
-symbol = "♠"
-vicmd_symbol = "❤"
-error_symbol = "♣"
+symbol = "▶"
+vicmd_symbol = "◀"
+error_symbol = "✖"
+use_symbol_for_status = true
 
 [battery]
-full_symbol = "♦"
-charging_symbol = "⚡️"
+full_symbol = "🔋
+"charging_symbol = "⚡️"
 discharging_symbol = "💀"
 
 [[battery.display]]  # "bold red" style when capacity is between 0% and 10%
@@ -13,5 +17,5 @@ threshold = 10
 style = "bold red"
 
 [[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
-threshold = 30
+threshold = 20
 style = "bold yellow"
